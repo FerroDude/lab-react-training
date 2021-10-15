@@ -6,10 +6,11 @@ const BoxColor = (props) => {
     backgroundColor: `rgb(${r}, ${g}, ${b})`,
     color: 'white',
     border: '1px solid black',
+    margin: '2px',
   };
   return (
-    <div>
-      <p style={divStyle}>
+    <div style={divStyle}>
+      <p>
         rgb({r}, {g}, {b})
       </p>
     </div>
