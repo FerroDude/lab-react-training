@@ -34,6 +34,8 @@ function App() {
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
       {/* Iteration 3 */}
+      <p>Test new pc</p>
+
       <Random min={1} max={6} />
       <Random min={1} max={100} />
       {/* Iteration 8 */}
