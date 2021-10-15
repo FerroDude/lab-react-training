@@ -6,6 +6,7 @@ import LikeButton from './LikeButton';
 import ClickablePicture from './ClickablePicture';
 import Carousel from './Carousel';
 import Dice from './Dice';
+import BoxColor from './BoxColor';
 import './App.css';
 
 function App() {
@@ -34,10 +35,11 @@ function App() {
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
       {/* Iteration 3 */}
-      <p>Test new pc</p>
-
       <Random min={1} max={6} />
       <Random min={1} max={100} />
+      {/* Iteration 4 */}
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
       {/* Iteration 8 */}
       <LikeButton /> <LikeButton />
       {/* Iteration 9 */}
