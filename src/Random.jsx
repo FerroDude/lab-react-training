@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Random extends React.Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       random: 0,
@@ -15,15 +15,13 @@ class Random extends React.Component {
   };
   render = () => {
     const { min, max } = this.props;
+    const { random } = this.state;
     return (
       <div>
         <p>
-          Click{' '}
-          <strong strong onClick={this.randomNumber}>
-            HERE
-          </strong>{' '}
-          to get a random number between {min} and {max} =>
-          {this.state.random}
+          Click <button onClick={this.randomNumber}>HERE</button> to get a
+          random number between {min} and {max} ={'>'}
+          {random}
         </p>
       </div>
     );
